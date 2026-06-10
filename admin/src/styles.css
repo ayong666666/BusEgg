@@ -34,17 +34,14 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.admin-logo span {
-  display: grid;
+.admin-logo-mark {
+  display: block;
   width: 38px;
   height: 38px;
-  place-items: center;
-  color: #fff;
-  background: var(--admin-orange);
+  flex: 0 0 38px;
+  object-fit: contain;
+  background: #fff;
   border-radius: 50%;
-  font-size: 28px;
-  font-weight: 900;
-  transform: rotate(-8deg);
 }
 
 .admin-logo strong {
@@ -223,4 +220,3 @@ body {
     grid-template-columns: 1fr;
   }
 }
-

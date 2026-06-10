@@ -1,7 +1,7 @@
 <template>
   <header class="site-header" :class="{ 'is-scrolled': isScrolled }">
     <a class="brand" href="#home" aria-label="蛋蛋巴士首页">
-      <span class="brand-mark">d</span>
+      <img class="brand-mark" src="/assets/logo.png" alt="" />
       <span>
         <strong>蛋蛋巴士</strong>
         <small>百家信数字科技有限公司</small>

@@ -2,7 +2,7 @@
   <el-container class="admin-shell">
     <el-aside width="232px" class="admin-aside">
       <div class="admin-logo">
-        <span>d</span>
+        <img class="admin-logo-mark" :src="`${baseUrl}assets/logo.png`" alt="" />
         <strong>蛋蛋巴士后台</strong>
       </div>
       <el-menu router :default-active="$route.path" class="admin-menu">
@@ -47,10 +47,10 @@ import { useAuthStore } from '../stores/auth'
 
 const router = useRouter()
 const authStore = useAuthStore()
+const baseUrl = import.meta.env.BASE_URL
 
 const logout = () => {
   authStore.logout()
   router.push('/login')
 }
 </script>
-

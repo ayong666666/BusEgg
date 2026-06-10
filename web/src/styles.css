@@ -79,22 +79,18 @@ textarea {
 }
 
 .brand-mark {
-  display: grid;
-  width: 42px;
-  height: 42px;
-  place-items: center;
-  color: var(--orange);
-  background: #fff;
+  display: block;
+  width: 54px;
+  height: 54px;
+  flex: 0 0 54px;
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.96);
   border-radius: 50%;
-  font-size: 32px;
-  font-weight: 900;
-  line-height: 1;
-  transform: rotate(-8deg);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
 }
 
 .site-header.is-scrolled .brand-mark {
-  color: #fff;
-  background: var(--orange);
+  box-shadow: 0 6px 16px rgba(234, 106, 24, 0.18);
 }
 
 .brand strong,
@@ -903,4 +899,3 @@ textarea {
     flex-direction: column;
   }
 }
-
