@@ -714,12 +714,45 @@ textarea {
 .form-tip {
   min-height: 22px;
   margin: 0;
-  color: #23740d;
+  color: #777;
   font-weight: 800;
 }
 
-.form-tip.error {
-  color: #c62828;
+.form-dialog-mask {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding: 22px;
+  background: rgba(31, 27, 24, 0.42);
+}
+
+.form-dialog {
+  width: min(100%, 380px);
+  padding: 28px;
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.22);
+}
+
+.form-dialog h3 {
+  margin: 0 0 12px;
+  color: var(--ink);
+  font-size: 22px;
+}
+
+.form-dialog p {
+  margin: 0 0 22px;
+  color: #555;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.form-dialog .btn {
+  width: 100%;
+  justify-content: center;
 }
 
 .site-footer {
